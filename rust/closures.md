@@ -1,3 +1,5 @@
+# Closures
+
 Consider the following code:
 
 ```rust
@@ -15,7 +17,9 @@ fn main () {
 ```
 
 Questions:
+
 1. What is the type of `_wrapper`?
-2. What is the way to explicitly type `_wrapper`? (What should be written in the place of the question mark `let _wrapper : Wrapper<?> = ...`).
+2. What is the way to explicitly type `_wrapper` (what should be written in the place of the
+   question mark `let _wrapper : Wrapper<?> = ...`)?.
 3. What is the memory representation of `_wrapper`?
 4. What is the difference between the type of `_wrapper` and `Wrapper<Box<dyn Fn(usize) -> usize>>`?

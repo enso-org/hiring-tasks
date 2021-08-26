@@ -1,3 +1,5 @@
+# Borrow Error
+
 Consider the following code:
 
 ```rust
@@ -22,13 +24,13 @@ impl ShapeSystemRegistry {
             Some(ShapeSystemRegistryEntryRef {instance_count})
         })
     }
-    
+
     fn register(&mut self, id:usize) -> ShapeSystemRegistryEntryRef {
         let entry = ShapeSystemRegistryEntry {instance_count:0};
         self.shape_system_map.insert(id,entry);
         self.get_mut(id).unwrap()
     }
-    
+
     fn get_or_register_mut<T>(&mut self, id:usize) -> ShapeSystemRegistryEntryRef {
         match self.get_mut(id) {
             Some(entry) => entry,
@@ -40,7 +42,7 @@ impl ShapeSystemRegistry {
 fn main(){}
 ```
 
-It does not compile. Rustc reports the following error:
+It does not compile, with `rustc` reporting the following error:
 
 ```
 error[E0499]: cannot borrow `*self` as mutable more than once at a time
@@ -56,7 +58,11 @@ error[E0499]: cannot borrow `*self` as mutable more than once at a time
    |                            ^^^^ second mutable borrow occurs here
 ```
 
-Questions:
-1. Why does this code fail to compile? Please elaborate taking into consideration the way Rust type checker works.
-2. Is this code theoretically safe? What would be possible harm if the Rust compiler would allow this code?
+Please answer the following questions:
+
+1. Why does this code fail to compile? Please elaborate, taking into consideration the way that the
+   Rust type checker works.
+2. Is this code theoretically safe? What would be the possible problems if the Rust compiler allowed
+   this code?
 3. How would you fix the code to make it compile?
+
