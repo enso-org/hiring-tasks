@@ -5,5 +5,5 @@ on [Enso](https://enso.org).
 
 So far it contains:
 
-- **[Rust](./rust/README.md):** Tasks to be given to people applying for
+- **[Rust](./rust):** Tasks to be given to people applying for
   positions working with the Rust programming language.
