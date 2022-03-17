@@ -1,4 +1,4 @@
-# Closures
+# Closures (questions only)
 
 Consider the following code:
 

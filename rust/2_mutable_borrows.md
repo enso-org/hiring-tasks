@@ -1,4 +1,4 @@
-# Mutable Borrows
+# Mutable Borrows (questions only)
 
 Consider the following code:
 
@@ -42,11 +42,8 @@ MyRefCell { data: 4 }
 
 Questions:
 
-1. Is this particular code safe? Is there any possibility (e.g. changes to options, compiler flags,
-   compiler versions, etc) that this program would produce a different result to the one provided
-   above?
-2. Is it safe to use `MyRefCell::borrow_mut` when compiling to a native platform? If not, what bad
+1. Is it safe to use `MyRefCell::borrow_mut` when compiling to a native platform? If not, what bad
    things could happen? Please elaborate.
-3. Is it safe to use `MyRefCell::borrow_mut` when compiling to WASM and running in a browser? If
+2. Is it safe to use `MyRefCell::borrow_mut` when compiling to WASM and running in a browser? If
    not, what bad things could happen? Please elaborate.
 

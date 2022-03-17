@@ -15,12 +15,14 @@ to us.
 
 When working on the following tasks, please follow these rules:
 
-- The code should be of a production ready quality. It should be code which you would be proud to
-  create a pull request for. In particular, remember about documentation, linting, proper semantic
-  naming, and keeping the API clean and understandable.
+- Most of the tasks are questions-only, where you do not need to write any code. Your answers do not
+  have to be long, but they should be precise and should cover all corner cases of the problem.
+- If you write a code, it should be of a production ready quality. It should be code which you would 
+  be proud to create a pull request for. In particular, remember about documentation, linting, proper 
+  semantic naming, and keeping the API clean and understandable. You can use unstable Rust if you want
+  to (we are using unstable Rust in all parts of our project).
 - Please take all security, performance, and memory usage concerns into consideration and write
   about them in a comment at the end of the file for each solution. Create a public API which could
   be easily and securely consumed by and end user.
 - Please use the Rust formatter (`rustfmt`), lint your code, and apply practices for good code
   quality.
-
