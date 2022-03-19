@@ -4,11 +4,11 @@ Hi! If you're reading this, it means that your application has been selected and
 stage of the Senior Rust Developer recruitment process at Enso. We send this document to
 approximately 5% of all applicants, and we're really happy to have you here!
 
-For each of the solutions that we get that meets our code quality standards we will schedule a final
+For each of the solutions that we get that meets our code quality standards, we will schedule a final
 call with the author. This call is the last step in the recruitment process, and we're excited to
 talking to you there!
 
-The tasks presented here are simple, and should nto be very time consuming. We understand that even
+The tasks presented here are simple, and should not be very time consuming. We understand that even
 simple tasks require time to deeply analyze the performance and security implications of potential
 solutions. We would like you to always choose the best solution, and clearly justify your choices
 to us.
