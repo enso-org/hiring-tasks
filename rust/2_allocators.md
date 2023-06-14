@@ -1,13 +1,13 @@
-# Allocators (questions only)
+# Allocators (questions only, no code needed)
 
-Is the following code safe? If not, why and how would you fix it? (You do not have to write the fixed code, but you can if you want to).
+Is the following code safe? If not, why and how would you fix it? (You do not have to write the fixed code).
 
 ```rust
 use bumpalo::Bump;
 
 pub type TokenVec<'s> = Vec<Token, &'s Bump>;
 
-// We want the [`Lexer`] to own the allocator because this is an internal 
+// We want the [`Lexer`] to own the allocator because this is an internal
 // design that should not be exposed to the users.
 #[repr(C)]
 pub struct Lexer<'s> {

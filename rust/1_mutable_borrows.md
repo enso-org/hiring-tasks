@@ -1,4 +1,4 @@
-# Mutable Borrows (questions only)
+# Mutable Borrows (questions only, no code needed)
 
 Consider the following code:
 
@@ -46,4 +46,3 @@ Questions:
    things could happen? Please elaborate.
 2. Is it safe to use `MyRefCell::borrow_mut` when compiling to WASM and running in a browser? If
    not, what bad things could happen? Please elaborate.
-

@@ -1,3 +1,5 @@
+# Generics (writing a code)
+
 Consider the following code:
 
 ```rust
